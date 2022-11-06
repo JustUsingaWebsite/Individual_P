@@ -42,6 +42,7 @@ img {
 <script>
 function decToASCII() {
   x = document.getElementById("inputdec").value;
+  x = Number(x);
   var res = String.fromCharCode(x);
   document.getElementById("demo").innerHTML = res;
   console.log(res);
